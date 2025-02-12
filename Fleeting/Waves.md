@@ -1,0 +1,42 @@
+20250110112025
+
+Tags:
+
+Waves are repeating sinusoidal movement. They are expressed in sine waves typically. 
+
+## Harmonic Waves
+Harmonic waves have their x and y positions defined as below.
+```ad-formula
+#### Harmonic Wave Formulas
+$$y = Asin(k(x±vt) + φ)$$
+$$x = Asin(kx ± ωt + ψ)$$
+```
+
+Some definitions to be made are $k$ and $ω$, which are the wave number and angular frequency of the wave. They are defined as $\frac{2π}{λ}$ and $\frac{2π}{T} = 2πv$ respectively. The phase velocity of a wave is the speed at which the constant phase moves through the system, and it's defined as $\frac{ω}{k} = λv$, where $v$ is the frequency of the wave. 
+
+## Addition
+For two harmonic waves, the addition of the waves with the same wavelength and direction, but different phases is done with trigonometric identities. 
+```ad-example
+#### Adding Waves
+$$ψ_{1} = ψ_{01}sin(kx + ωt + φ_{1})$$
+$$ψ_{2} = ψ_{02}sin(kx + ωt + φ_{2})$$
+$$ψ_{T} = ψ_{1} + ψ_{2} + ψ_{T0}sin(kx + ωt + α)$$
+$$|ψ_{T0}^{2}| = ψ_{01}^{2} + ψ_{02}^{2} + 2ψ_{01}ψ_{02}cos(ψ_1 - ψ_2)$$
+$$\text{tan}(α) = \frac{ψ_{01}sin(ψ_{1}) + ψ_{02}sin(ψ_{2})}{ψ_{01}cos(ψ_{1}) + ψ_{02}cos(ψ_{2})}$$
+```
+
+## Dependencies
+There are two kinds of dependencies a time-dependent wave has, one of time and another of space, expressed as $ωt$ and $kt$ respectively. 
+
+## Dispersion Relation
+The angular frequency and wavelength of a wave are related to each other, and that relation is called the dispersion relation. 
+
+## Fourier Transform
+The Fourier transform is integral to wave functions, since they break down complex waves into simple perfect waves. 
+
+## Group Velocity
+An individual wave peak may be traveling in one direction, but the overall wave packet, a collections of waves, may be moving in another direction. The speed at which the wave packet is moving is called the group velocity. For a wave packet $$ψ(x, t) = \int A(k)e^{-i(kx - ωkt)}dk$$
+and that A(k) has a few important values, $ω(k)$ can be expanded to the following form $$ω(k) \approxeq ω(k_{0}) + (k - k_{0})\left( \frac{dω}{dk} \right)_{k_{0}} + \dots$$
+For a $k' = k - k_{0}$, the above wave packet equation can be expanded to $$ψ(x, t) = e^{i(k_{0}x - ωk_{0}t)}\int dk' e^{-ik'\left[x - \{\frac{dω}{dk}t\}\right]_{0}}$$
+Following the expansion, it can be derived that the group velocity of the packet is $$v_{g} = \frac{dω}{dk}$$
+
