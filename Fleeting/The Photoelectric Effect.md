@@ -22,4 +22,4 @@ The photoelectric effect that Einstein postulated was not accepted in 1905 until
 5. The contact E.M.F. between any two conductors is given by the equation $\text{E.M.F} = \frac{h}{e}$
 ___
 # References
-[[Overview and Experimental Evidence for Waves and Particles]]
+[[Class 1 - Overview and Experimental Evidence for Waves and Particles]]

@@ -12,4 +12,4 @@ Tags: [[Particles]]
 
 ___
 # References
-[[Overview and Experimental Evidence for Waves and Particles]]
+[[Class 1 - Overview and Experimental Evidence for Waves and Particles]]

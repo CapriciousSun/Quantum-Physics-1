@@ -11,4 +11,4 @@ They would excite a calcium atom, and the electron would get excited. A detector
 What is found is that indeed, the detected events are only either in one or the other, which provides evidence the photons are indivisible quanta. 
 ___
 # References
-[[Overview and Experimental Evidence for Waves and Particles]]
+[[Class 1 - Overview and Experimental Evidence for Waves and Particles]]

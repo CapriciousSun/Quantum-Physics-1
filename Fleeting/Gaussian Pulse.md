@@ -11,3 +11,5 @@ The unintegrated form of the Gaussian function is
 Unintegrated Form
 #### $$f(x) = \frac{1}{σ_{x}\sqrt{2π}}e^{\frac{-x^{2}}{2σ_{x}^{2}}}$$
 ```
+
+## Fourier Transform

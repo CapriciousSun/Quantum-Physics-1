@@ -24,4 +24,4 @@ From these two formulas, the formula for the Compton wavelength can be determine
 ```
 ___
 # References
-[[Overview and Experimental Evidence for Waves and Particles]]
+[[Class 1 - Overview and Experimental Evidence for Waves and Particles]]
