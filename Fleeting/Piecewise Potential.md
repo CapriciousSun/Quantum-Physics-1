@@ -2,13 +2,28 @@
 
 Tags:
 
-Problems in quantum physics can be solved by finding the instant potential for every region and matching up the solutions and derivatives at the boundaries. The solution to a time-independent Schrodinger equation in a region where $V$ is constant and $E > V$ is a system where the kinetic energy is positive $$\begin{gather*}
+Problems in quantum physics can be solved by finding the instant potential for every region and matching up the solutions and derivatives at the boundaries. 
+
+## Solutions
+The solution to a time-independent Schrodinger equation in a region where $V$ is constant and $E > V$ is a system where the kinetic energy is positive 
+#### $$\begin{gather*}
 \frac{\hbar^{2}}{2m} \frac{\partial^{2}ψ(x)}{\partial x^{2}} + (E - V)ψ(x) = 0 \\
 \Downarrow \\
-\frac{\hbar^{2}k^{2}}{2m} = (E - V) \implies k = \pm \sqrt{ \frac{2m(E - V)}{\hbar^{2}} }
+\frac{\hbar^{2}k^{2}}{2m} = (E - V) \implies k = \pm \sqrt{ \frac{2m(E - V)}{\hbar^{2}} } = \frac{2π}{λ}
 \end{gather*}$$
-On the other hand, for a time-independent Schrodinger equation where $V$ is a constant and $E < V$, the solution would look like $$\frac{\hbar^{2}}{2m} \frac{\partial^{2}ψ(x)}{\partial x^{2}} - |E - V|ψ(x) = 0$$
-Like the last step, we're guessing that $ψ(x) = e^{ikx}$ $$\frac{\hbar^{2}k^{2}}{2m} = -|E - V| \implies k = \pm i\sqrt{ \frac{2m|E - V|}{\hbar^{2}} }$$
+On the other hand, for a time-independent Schrodinger equation where $V$ is a constant and $E < V$, the solution would look like 
+#### $$\frac{\hbar^{2}}{2m} \frac{\partial^{2}ψ(x)}{\partial x^{2}} - |E - V|ψ(x) = 0$$
+Like the last step, we're guessing that $ψ(x) = e^{ikx}$ 
+#### $$\frac{\hbar^{2}k^{2}}{2m} = -|E - V| \implies k = \pm i\sqrt{ \frac{2m|E - V|}{\hbar^{2}} }$$
+
+## Boundary Conditions
+The boundary conditions for a $E < V$ is
+#### $$ikAe^{ikx} - ikBe^{-ikx} = -KCe^{-Kx}$$
+which obeys smoothity. The exponential functions could be canceled out. For boundary conditions of a $E > V$, it's reasonable to expect two different $k$ values for the energy before the well and the energy during the well. Before the well would have a wavefunction
+#### $$ψ(x) = Ae^{ik_{1}x} + Be^{ik_{1}x}$$
+After the well would have a wavefunction
+#### $$ψ(x) = Ce^{ik_{2}x} + De^{-ik_{2}x}$$
+$De^{-ik_{2}x}$ would typically be removed because there is no barrier to stop it from growing exponentially. 
 
 #### Intuition
 Solutions for the Schrodinger equation curve toward the x-axis in classically allowed $(E > V)$ regions and away from the x-axis in classically forbidden regions. For states with boundaries, being outside of the bounds means the wavefunction is zero. Curvatures increases for larger $|E - V(x)|$. Solutions are continuous and smooth if the potential has finite steps (most physical systems). 
@@ -48,3 +63,5 @@ For odd parity states
 k\cot\left( \frac{ka}{2} \right) = -K
 \end{gather*}$$
 For even solutions, the wavefunction must be continuous at the boundary of $x = -\frac{a}{2}$ and $x = \frac{a}{2}$. The wavefunction will look like $B\cos\left( \frac{ka}{2} \right) = Ce^{-\frac{κa}{2}}$. The derivative of the wavefunction must be continuous at the same boundaries, $Bk\sin\left( \frac{ka}{2} \right) = CKe^{-\frac{κa}{2}}$. These equations are transcendental equations that cannot be solved in closed form, but can be solved with numerical methods. 
+
+The wavelength before and after the barrier would be the same. This is the continuity of the probability current. 

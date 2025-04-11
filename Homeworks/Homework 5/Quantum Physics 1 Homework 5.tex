@@ -1,0 +1,64 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{subfig}
+\title{Quantum Physics 1 Homework 5}
+\author{Jeremy Chen}
+\begin{document}
+	\maketitle
+\section*{(1) Townsend 4.10}
+The energy eigenvalues and eigenfunctions of the simple harmonic oscillator are given in Section 4.3. What are the energy eigenvalues for the "half" harmonic oscillator potential energy
+$$V(x) = \begin{cases}
+\infty : x < 0 \\
+\frac{1}{2}m\omega^{2}x^{2} : x > 0
+\end{cases}$$
+shown in Fig. 4.35. Sketch the corresponding energy eigenfunctions for the three lowest energy states. 
+\begin{figure}[h!]
+	\centering
+	\subfloat{\includegraphics[width=0.5\textwidth]{"2025-03-21_19-27.jpg"}}
+\end{figure}
+
+\section*{(2) Townsend 4.14}
+Find a reference to the solution for this problem and cite it.
+
+\textbf{Answer: }Suzuki, Masatsugu Sei, and Itsuko S. Suzuki. A Particle Confined within a Triangular Potential Well, 29 Dec. 2020, bingweb.binghamton.edu/~suzuki/QuantumMechanicsFiles/13-6 Airy function for triangular potential.pdf. 
+
+\section*{(3) Townsend 5.04}
+A particle of mass $m$ moves in the potential energy $V(x) = \frac{1}{2}m\omega^{2}x^{2}$. The ground-state wave function is 
+$$\psi_{0}(x) = \left( \frac{a}{\pi} \right)^{\frac{1}{4}} e^{-\frac{ax^{2}}{2}}$$
+and the first excited-state wave function is
+$$psi_{1}(x) = \left( \frac{4a^{3}}{\pi} \right) xe^{-\frac{ax^{2}}{2}} $$
+where $a = \frac{m\omega}{\hbar}$. What is the average value of the parity for the state
+$$\Psi(x) = \frac{\sqrt{3}}{2} \psi_{0}(x) + \frac{1 - i}{2\sqrt{2}} \psi_{1}(x) $$
+
+\textbf{Answer: }The final wavefunction's coefficients provides the information regarding the parity of the states. The first wavefunction is an even function, so it's the coefficient times 1. The second wavefunction is an odd function, so it's the coefficient times -1. 
+$$\left( \frac{\sqrt{3}}{2} \right)^{2} * 1 + \left( \frac{1 - i}{2\sqrt{2}} \right)^{2} * (-1) = \frac{3}{4} - \frac{1}{4} = \frac{1}{2}$$
+
+\section*{(4) Townsend 5.05}
+For a particle in a harmonic oscillator potential, it is known that there is one-third chance of obtaining the ground-state energy $E_{0}$, a one-third chance of obtaining the first-excited-state energy $E_{1}$, and a one-third chance of obtaining the second-excited-state $E_{2}$ if a measurement of the energy is carried out. If a measurement of the parity is carried out and the value -1 is obtained, what value will a subsequent measurement of the energy yield? If a measurement of the parity yields the value +1, what values can a subsequent measurement of the energy yield? What are the probabilities of obtaining these energies?
+
+\textbf{Answer: }For the parity value of -1, the first-excited-state is measured, since -1 parity is for odd energy eigenfunctions. For the parity value of +1, the ground-state and second-excited-state is measured, since +1 parity is for even energy eigenfunctions. The probabilities of obtaining these energies are all $\frac{1}{3}$. 
+
+\section*{(5) Townsend 5.08}
+Let the operator $A_{op}$ correspond to an observable of a particle. It is assumed to have just two eigenfunctions $\psi_{1}(x)$ and $\psi_{2}(x)$ with distinct eigenvalues. The function corresponding to an arbitrary state of the particle can be written as 
+$$\psi(x) = c_{1}\psi_{1}(x) + c_{2}\psi_{2}(x)$$
+An operator $B_{op}$ is defined according to 
+$$B_{op}\psi(x) = c_{2}\psi_{1}(x) + c_{1}\psi_{2}(x)$$
+Prove that $B_{op}$ is Hermitian
+
+\textbf{Answer: }If the operator were Hermitian, then it means the following two operations are true
+$$\begin{cases}
+B_{op}\psi_{1}(x) = c_{2}\psi_{1}(x) \\
+B_{op}\psi_{2}(x) = c_{1}\psi_{2}(x)
+\end{cases}$$
+Hence, the following relation can be created
+\begin{gather*}
+\int_{-\infty}^{\infty} \psi_{2}^{*} B_{op}\psi_{1}dx = \int_{-\infty}^{\infty} (B_{op} \psi_{2})^{*} \psi_{1}dx \\
+\int_{-\infty}^{\infty} \psi_{2}^{*} c_{2} \psi_{1}dx = \int_{-\infty}^{\infty} (c_{1} \psi_{2})^{*} \psi_{1}(x)dx \\
+(c_{2} - c_{1}) \int_{-\infty}^{\infty} \psi_{2}^{*} \psi_{1}dx
+\end{gather*}
+Since both $c_{1}$ and $c_{2}$ are both distinct eigenvalues, this means the system is Hermitian. 
+\end{document}

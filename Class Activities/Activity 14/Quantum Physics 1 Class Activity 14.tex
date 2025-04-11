@@ -1,0 +1,53 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{indentfirst}
+\title{Quantum Physics 1 Class Activity 14}
+\author{Jeremy Chen}
+\begin{document}
+	\maketitle
+\section*{1) We will assume that there is a particle of energy $E$, represented by a pure momentum traveling wave $\Psi(x, t) = Ae^{i(kx - \omega t)}$ so $\psi(x) = Ae^{ikx}$ incident from the left and that there is some probability that it will be reflected at the barrier at location $x = 0$.}
+\subsection*{a) Write $\psi(x)$ for a particle of mass $m$, energy $E$, and amplitude $A$ traveling in the $+x$ direction in region $I$ towards a barrier as above. Be sure to define $k_{1}$ in terms of $E$ and $m$.}
+\textbf{Answer:} Since $E > V_{0}$, $k_{1} = \frac{\sqrt{2mE}}{\hbar}$ for $x < 0$. So then $\psi(x) = Ae^{ik_{1}x}$, where $k_{1}$ is the previous definition. 
+$$\psi(x) = Ae^{i \frac{\sqrt{2mE}}{\hbar}x}$$
+\subsection*{b) Remember that the probability current is $j(x, t) = \frac{-i\hbar}{2m}\left( \Psi^{*} \frac{\partial}{\partial x}\Psi - \Psi \frac{\partial}{\partial x} \Psi^{*} \right)$. Write down the probability current for this wave in terms of $A$, $E$, and $m$.}
+\textbf{Answer:} The probabilty current would be $\frac{\hbar k_{1}}{m}|A|^{2}$, where the previous definition of $k_{1}$ still stands. 
+$$j_{x} = \frac{\sqrt{2mE}}{m}|A|^{2}$$
+
+\section*{2) Write $\psi(x)$ and the probability current for a particle of energy $E$ and amplitude $B$ traveling in the $-x$ direction in region $I$.}
+\textbf{Answer:} Since $E > V_{0}$ is still true, the last $k_{1}$ should still apply here. 
+\begin{gather*}
+\psi(x) = Be^{-i\frac{\sqrt{2mE}}{\hbar}x} \\
+j_{x} = -\frac{\sqrt{2mE}}{m}|B|^{2}
+\end{gather*}
+
+\section*{3)  Combine answers to 1 and 2 to write the general wavefunction for a particle of energy $E$ in region $I$.}
+\textbf{Answer:} The combined wavefunction is the sum of the two wavefunctions. 
+$$\psi(x) = Ae^{i\frac{\sqrt{2mE}}{\hbar}x} + Be^{-i\frac{\sqrt{2mE}}{\hbar}x}$$
+
+\section*{4) Assuming that there is some probability that the particle continues on into region $II$, write down the form of $\psi(x)$ of amplitude $C$ and wavevector $k_{2}$ in region $II$ assuming $E > V$. (What is $k_{2}$ in terms of E and $V_{0}$?)}
+\textbf{Answer:} $k_{2}$'s energy would be the total energy $E$ subtracted by the potential $V_{0}$. Everything else would remain the same within the wavevector.
+\begin{gather*}
+k_{2} = \frac{\sqrt{2m(E - V_{0})}}{\hbar} \\
+\psi(x) = Ce^{i\frac{\sqrt{2m(E - V_{0})}}{\hbar}x}
+\end{gather*}
+
+\section*{5) What conditions apply to the wavefunction and it's first derivative at the $x = 0$ boundary? Write out the relevant equations.}
+\textbf{Answer:} Since the wavefunction is continous, it yields the equations $A + B = C$ and $ik_{1}(A - B) = ik_{2}C$. 
+
+\section*{6) Use these equations to solve for the amplitudes $B$ and $C$ in terms of $A$, $k_{1}$, $k_{2}$.}
+\textbf{Answer:} From the above equations, the following system for the amplitudes can be derived. 
+$$\begin{cases}
+B = \frac{k_{1} - k_{2}}{k_{1} + k_{2}}A \\
+C = \frac{2k_{1}}{k_{1} + k_{2}}A
+\end{cases}$$
+
+\section*{7) The transmission coefficient $T$ is the probability current in region 2 divided by the incident current. Find it in terms of $k_{1}$ and $k_{2}$.}
+\textbf{Answer:} The transmission coefficient is found with $\frac{k_{2}|C|^{2}}{k_{1}|A|^{2}}$.
+$$T = \frac{4k_{1}k_{2}}{(k_{1} + k_{2})^{2}}$$
+
+\section*{8) Rewrite $T$ in terms of $E$, $m$, and $V_{0}$.}
+\textbf{Answer:}
+$$T = \frac{4\frac{\sqrt{2mE}}{\hbar}\frac{\sqrt{2m(E - V_{0})}}{\hbar}}{\left( \frac{\sqrt{2mE}}{\hbar} \frac{\sqrt{2m(E - V_{0})}}{\hbar} \right)^{2}} = \frac{8\sqrt{E} \sqrt{m} \sqrt{m(E - V_{0})}}{\hbar^{2} \left( \frac{\sqrt{2} \sqrt{m(E - V_{0})}}{\hbar} + \frac{\sqrt{2E} \sqrt{m}}{\hbar} \right)^{2}}$$
+\end{document}

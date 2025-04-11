@@ -1,6 +1,10 @@
 20250131110844
 
 Tags:
-## Expansions
-Expressing a Hamiltonian must be in the form of an eigenfunction, so converting from $$\mathcal{H}(c_{1}Ψ1 + c_{2}Ψ_{2}) = E_{1}c_{1}Ψ_{1} + E_{2}c_{2}Ψ_{2}$$
-into $$\mathcal{H}() = E_{12}()$$
+## Eigenvalue Expansion
+In terms of [[Dirac Notation|Dirac notation]], the expansion of a wavefunction $ψ = c_{1}ψ_{1} + c_{2}ψ_{2}$ is written as the following 
+#### $$\begin{gather}
+c_{1} = \langle ψ | ψ_{1} \rangle \\ \\
+c_{2} = \langle ψ | ψ_{2} \rangle
+\end{gather}$$
+#### Physical Meaning of Expansion

@@ -1,0 +1,39 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{indentfirst}
+\title{Quantum Physics 1 Homework 4}
+\author{Jeremy Chen}
+\begin{document}
+	\maketitle
+	
+\section*{(2)}
+\subsection*{(a) Verify that the wavefunction $\Psi = Ce^{-\kappa x - iEt/\hbar}$ in the region $x > 0$ for the step potential of Section 4.6 leads to zero probability current in this region.}
+The probability current is calculated with the formula 
+$$J_x = \frac{\hbar}{2mi} (\Psi^{*} \nabla \Psi - \Psi \nabla \Psi^{*})$$
+
+When plugging in with $Ce^{\kappa x - iEt/\hbar}$ we get 0 total. 
+$$J_{x} = \frac{\hbar}{2mi}(Ce^{\kappa x - iEt//\hbar} * (- \kappa Ce^{-\kappa x}) - Ce^{\kappa x - iEt/\hbar} \kappa Ce^{\kappa x}) = 0$$
+\subsection*{(b) Use the conservation of probability equation to argue that the probability current vanishes in the region $x < 0$ as well for this energy eigenfunction. What can you therefore conclude about the magnitude of the reflection coefficient.}
+$$\frac{\partial \Psi^{*}\Psi}{\partial t}$$
+is the formula for conservation of probability. Where $J_{x}$ is 0, $\nabla \cdot J$ should also be, hencethe reflection coefficient should be 1 due to the transmission coefficient being 0 and $R - 1 = T$. 
+
+\section*{(3) Solve the time-independent Schrodinger equation for a particle of mass $m$ and energy $E > V_{0}$ incident from the left on the step potential. Determine the reflection coefficient $R$ and the transmission coefficient $T$. Verify that probability is conserved.}
+$$V(x) = \begin{cases}
+V_{0};\ x < 0 \\
+0;\ x > 0
+\end{cases}$$
+This must mean the two values of $k$ before and after the barrier are $k = \frac{\sqrt{2m(E - V_{0})}}{\hbar}$ and $k_{0} = \frac{\sqrt{2mE}}{\hbar}$. This creates the system
+$$ikC = ik_{0}(A - B)$$
+Solving for $C$ and $B$ in terms of $A$ results in the following.
+$$R = \frac{|B|^{2}}{|A|^{2}};\ \ \ \ T = \frac{k|C|^{2}}{k_{0}|A|^{2}}$$
+
+\section*{(5) Calculate the reflection and transmission coefficients for scattering from the potential energy barrier where $\alpha/a$ is a constant and $\delta(x)$ is a Dirac delta function. Assume the particle with mass $m$ and energy $E$ is incident on the barrier from the left.}
+Under the assuming that $\left(\frac{d\psi}{dx}\right)_{0^{+}} - \left(\frac{d\psi}{dx}\right)_{0^{-}} = \frac{\alpha}{a}\psi(0)$, that means 
+$$ik(F - G - A + B) = \frac{\alpha}{a}(A + B)$$
+Since $F$ is the transmission coefficient here, solving for $F$ would result in the transmission coefficient. 
+$$F = A\left(1 - \frac{\alpha i}{ak}\right) + (F - A)\left(-\frac{\alpha i}{ak} - 1\right)$$
+If we define $\beta = \frac{\alpha i}{ak}$
+$$F = \frac{2 - 2\beta}{2 + \beta}A = T$$
+\end{document}

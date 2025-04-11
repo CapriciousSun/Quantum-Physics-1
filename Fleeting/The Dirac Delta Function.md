@@ -18,4 +18,7 @@ The continuity of the wavefunction gives $ψ^{-} = ψ^{+}$ so $A = B$. The slope
 so $$\left.\frac{dψ}{dx}\right\vert_{β} - \left.\frac{dψ}{dx}\right\vert_{-β} = -2ΚΑ$$
 Plugging into the Schrodinger equation as mentioned before 
 #### $$-\int_{-β}^{β} \frac{\hbar^{2}}{2m} \frac{\partial^{2}}{\partial x^{2}}ψdx + \int_{-β}^{β} λδ(x)ψdx = \int_{-β}^{β} Eψdx$$
-The right hand side has $β \rightarrow 0$ because the integrand is infinite. 
+The right hand side has $β \rightarrow 0$ because the integrand is infinite, so 
+#### $$\int_{-β}^{β} \frac{\hbar^{2}}{2m} \frac{\partial^{2}}{\partial x^{2}}ψdx = \int_{-β}^{β} λδ(x)ψdx$$
+Doing the integrals separately yields an integration of 
+#### $$\left.\frac{\hbar^{2}}{2m} \frac{\partial ψ}{\partial x}\right\vert_{-β}^{β}$$

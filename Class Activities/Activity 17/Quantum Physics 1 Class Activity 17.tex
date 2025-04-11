@@ -1,0 +1,20 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{indentfirst}
+\title{Quantum Physics 1 Class Activity 17}
+\author{Jeremy Chen}
+\begin{document}
+	\maketitle
+\section*{Is $\frac{\partial}{\partial x}$ Hermitian?}
+$\frac{\partial}{\partial x}$ is not Hermitian. 
+\begin{gather*}
+\langle \Psi | \frac{\partial}{\partial x} | \Phi \rangle = \int_{-\infty}^{\infty} \Psi^{*} \frac{\partial \Phi}{\partial x} dx \\
+\langle \Phi | \frac{\partial}{\partial x} | \Phi \rangle^{*} = \left(\int_{-\infty}^{\infty} \Phi^{*} \frac{\partial \Psi}{\partial x}dx\right)^{*}
+\end{gather*}
+Integrating for the second equation looks like
+$$\int_{-\infty}^{\infty} \Phi \frac{\partial \Psi^{*}}{\partial x}dx = \left. \Phi \Psi^{*}\right\vert_{-\infty}^{\infty} - \int_{-\infty}^{\infty} \frac{\partial \Phi}{\partial x} \Psi^{*}dx$$
+$$\int_{-\infty}^{\infty} \Psi^{*} \frac{\partial \Phi}{\partial x} \neq -\int_{-\infty}^{\infty} \frac{\partial \Phi}{\partial x} \Psi^{*}dx$$
+Since they are not equal to each other, $\frac{\partial}{\partial x}$ is not Hermitian.
+\end{document}

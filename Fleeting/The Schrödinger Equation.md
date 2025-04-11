@@ -89,5 +89,6 @@ So, the Schrodinger equation can be converted to
 Then, the information need to continue are 
 4. If the slope of the wavefunction at a known point is zero or finite
 5. The expected behavior of the wavefunction
-
-
+___
+# References
+[[Class 3 - The State Function and its Interpretation]]
